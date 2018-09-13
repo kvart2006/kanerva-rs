@@ -1,0 +1,29 @@
+[package]
+name = "kanerva"
+version = "0.1.0"
+authors = ["bb <bela.berde@gmail.com>"]
+build = "build.rs"
+
+crate-type = ["staticlib"]
+
+[build-dependencies]
+
+[build-dependencies.cc]
+version = "1.0"
+
+[build-dependencies.bindgen]
+version = "0.26.3"
+
+[dependencies]
+rand = "0.5.5"
+libc = "0.2.0"
+
+[dependencies.bittable]
+bittable = { path = "../bittable" }
+version = "0.1.*"
+
+[patch.crates-io]
+bittable = { path = "../bittable" }
+
+[profile.release]
+lto = true

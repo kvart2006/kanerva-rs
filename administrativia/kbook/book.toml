@@ -1,0 +1,22 @@
+[book]
+title = "kanerva"
+description = "kanerva project"
+authors = ["Bela Berde", "Bela Berde"]
+multilingual = false
+src = "src"
+
+[output.html]
+mathjax-support = true
+additional-css = ["kanerva.css"]
+
+[output.html.playpen]
+editable = true
+
+[output.html.search]
+limit-results = 20
+use-boolean-and = true
+boost-title = 2
+boost-hierarchy = 2
+boost-paragraph = 1
+expand = true
+heading-split-level = 2
