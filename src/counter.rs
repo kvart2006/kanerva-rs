@@ -1,13 +1,11 @@
-///
-/// Import 'constants.rs'.
-/// The file was generated with values defined in 'build.rs'.
-///
+//
+// Import 'constants.rs'.
+// The file was generated with values defined in 'build.rs'.
+//
 #[allow(missing_docs)]
 include!(concat!(env!("OUT_DIR"), "/dimensions.rs"));
 ///
 use std::mem;
-///
-use std::fmt;
 ///
 use bittable::BitTable;
 ///

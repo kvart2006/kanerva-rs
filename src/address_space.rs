@@ -1,17 +1,9 @@
-///
-/// Import 'array_float_constants.rs'.
-/// The file was generated with values defined in 'build.rs'.
-///
+//
+// Import 'array_float_constants.rs'.
+// The file was generated with values defined in 'build.rs'.
+//
 #[allow(missing_docs)]
 include!(concat!(env!("OUT_DIR"), "/dimensions.rs"));
-///
-use rand::distributions::Bernoulli;
-///
-use rand::{thread_rng, Rng};
-///
-use std::mem;
-///
-use std::fmt;
 ///
 use bittable::BitTable;
 ///
@@ -33,12 +25,6 @@ use bittable::BitTable;
 ///
 /// row: SIZE*8*mem::size_of::<usize>()
 /// col: HARDLOC*8*mem::size_of::<usize>()
-///
-///
-/// Number of bits: in a `usize` (`64` in a 64 bits target).
-///
-#[inline(always)]
-const fn bits() -> usize { mem::size_of::<usize>() * 8 }
 ///
 ///
 ///
