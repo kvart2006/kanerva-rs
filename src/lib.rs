@@ -145,7 +145,6 @@ impl SDM {
     }
 }
 
-
 #[cfg(test)]
 mod tests {
 
@@ -163,6 +162,7 @@ mod tests {
         let radius: usize = 128;
         let s: SDM = SDM::new();  
         let v = s.scan(&bt, radius);
+        assert_eq!(s.d, DIM);
     }
 
     #[test]
@@ -170,7 +170,8 @@ mod tests {
         let bt = BitTable::new_rand();
         let radius: usize = 128;
         let mut s: SDM = SDM::new();  
-        let v = s.write(&bt, radius);
+        let _ = s.write(&bt, radius);
+        assert_eq!(s.d, DIM);
     }
 
     #[test]
